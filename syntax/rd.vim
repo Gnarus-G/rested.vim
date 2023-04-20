@@ -18,6 +18,7 @@ syn match ident /\<\I*/ display
 syn match call /\<[a-z]\w*\s*\ze(/ display
 
 syn match comment /\(:\)\@<!\/\/.*$/
+syn match comment /#!.*$/
 
 hi def link string String
 hi def link comment Comment

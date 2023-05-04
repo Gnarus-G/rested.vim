@@ -2,7 +2,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword basicItems set get post let
+syn keyword basicItems set get post put patch delete let
 syn keyword basicTypes header body
 
 syn region callParams start="(" end=")" transparent fold

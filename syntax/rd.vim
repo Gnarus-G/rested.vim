@@ -4,6 +4,7 @@ endif
 
 syn keyword basicItems set get post put patch delete let
 syn keyword basicTypes header body
+syn keyword boolean true false
 
 syn region callParams start="(" end=")" transparent fold
 syn region block start="{" end="}" transparent fold
@@ -23,7 +24,10 @@ syn cluster expr contains=string,ident,call
 syn match comment /\(:\)\@<!\/\/.*$/
 syn match comment /#!.*$/
 
+highlight Boolean ctermfg=LightMagenta guifg=LightMagenta
+
 hi def link string String
+hi def link boolean Boolean
 hi def link templateString String
 hi def link comment Comment
 hi def link attribute PreProc

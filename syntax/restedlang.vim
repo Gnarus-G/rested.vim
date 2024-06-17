@@ -38,4 +38,4 @@ hi def link basicItems Keyword
 hi def link basicTypes Type
 hi def link templateBraces Operator
 
-let b:current_syntax = "rd"
+let b:current_syntax = "restedlang"
